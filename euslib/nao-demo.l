@@ -25,6 +25,7 @@
 
 (defun eat-right ()
   (progn
+    (unix:usleep (* 1000 2000))
     (reach1-0 6000)
     (speak-jp "\\vct=100\\\\rspd=80\\ストロベリーチョコを食べるね")
     (unix:usleep (* 1000 6000))
@@ -33,7 +34,7 @@
     (reach1-5 6000)
     (unix:usleep (* 1000 3000))
     (speak-jp "\\vct=100\\\\rspd=80\\いただき\\vct=110\\まーす？")
-    (unix:usleep (* 1000 3000))
+    (unix:usleep (* 1000 4000))
     (publish-choco-status "attachR")
     (unix::usleep (* 1000 300))
     (reach1-2 6000)
@@ -52,6 +53,7 @@
 
 (defun eat-left ()
   (progn
+    (unix:usleep (* 1000 2000))
     (reach1-0 6000)
     (speak-jp "\\vct=100\\\\rspd=80\\ミルクチョコを食べるね")
     (unix:usleep (* 1000 6000))
@@ -60,7 +62,7 @@
     (reach1-7 6000)
     (unix:usleep (* 1000 3000))
     (speak-jp "\\vct=100\\\\rspd=80\\いただき\\vct=110\\まーす？")
-    (unix:usleep (* 1000 3000))
+    (unix:usleep (* 1000 4000))
     (publish-choco-status "attachL")
     (unix::usleep (* 1000 300))
     (reach1-2 6000)
